@@ -3,62 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AVA SENA - Ambiente Virtual de Aprendizaje " />
-  <meta name="theme-color" content="#063f45" />
-  <title>AVA SENA </title>
+  <meta name="description" content="Programas de Computadora - Compusoft SENA" />
+  <title>Programas de Computadora | Compusoft</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar" aria-label="Navegacion principal">
-    <a class="brand" href="#inicio" aria-label="Inicio AVA SOF">
-      <img src="Imagenes/AVASENALOGO.JPG" alt="Logo AVA SOF" style="height: 40px; width: auto;" />
-      <span>AVA SOF</span>
+    <a class="brand" href="index.html" aria-label="Inicio Compusoft">
+      <span>Compusoft</span>
     </a>
     <ul class="nav-links">
-      <li><a href="avasof.html">Inicio</a></li>
-      <li><a href="../index.html">AVA.edu</a></li>
+      <li><a href="index.html">🏠 Inicio</a></li>
+      <li><a href="Asesorias.html">🌿 Asesorías</a></li>
+      <li><a href="Mantenimiento.html">🔧 Mantenimiento</a></li>
+      <li><a href="Desarrollo de software.html">💻 Desarrollo de Software</a></li>
+      <li><a href="Desarrollo de aplicaciones.html">📱 Desarrollo de Aplicaciones</a></li>
       <li class="nav-dropdown">
-        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">Servicios</button>
-        <ul class="dropdown-menu" aria-label="Servicios">
-          <li><a href="Pagina WEB.html">PG WEB</a></li>
-          <li><a href="Programas de Computadora.html">Programas de computadora</a></li>
-          <li><a href="appscelular.html">Aplicaciones para celular</a></li>
-          <li><a href="modelo 3d.html">Modelo 3D</a></li>
-          <li><a href="redessociales.html">Redes sociales</a></li>
+        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">🌐 Más Servicios</button>
+        <ul class="dropdown-menu" aria-label="Más servicios">
+          <li><a href="Pagina WEB.html">🌐 Página WEB</a></li>
+          <li><a href="Programas de Computadora.html">🖥️ Programas de Computadora</a></li>
+          <li><a href="appscelular.html">📱 Apps Celular</a></li>
+          <li><a href="modelo 3d.html">🏞️ Modelo 3D</a></li>
+          <li><a href="redessociales.html">🤝 Redes Sociales</a></li>
         </ul>
       </li>
-      <li><a href="../ingreso.html">Ingresar</a></li>
     </ul>
   </nav>
 
-  <main class="layout">
-    <section class="hero" id="inicio">
-      <div>
-                <h1>Computadoras</h1>
-             <p>Desarrollo de programas de computadora</p>
-        <div class="actions">
-          <a class="btn" href="#aprender">Inventario</a>
-          <a class="btn" href="#aprender">Contabilidad</a>
-          <a class="btn" href="#aprender">Vigilancia</a>
-          <a class="btn" href="#aprender">Dispositivos</a>
-          <a class="btn secondary" href="#planeacion">Ver fases</a>
+  <main>
+    <div class="page-layout">
+      <aside class="sidebar-left">
+        <div class="sidebar-card">
+          <h4>Categorías</h4>
+          <ul class="sidebar-nav">
+            <li><a href="#">📊 Gestión empresarial</a></li>
+            <li><a href="#">🌿 Ambiental</a></li>
+            <li><a href="#">🎨 Diseño gráfico</a></li>
+            <li><a href="#">🔒 Seguridad</a></li>
+            <li><a href="#">📚 Educativo</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Compatibilidad</h4>
+          <ul class="sidebar-nav">
+            <li><a href="#">🪟 Windows 10/11</a></li>
+            <li><a href="#">🍎 macOS</a></li>
+            <li><a href="#">🐧 Linux</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Tipos de Licencia</h4>
+          <span class="sidebar-badge">Individual</span>
+          <span class="sidebar-badge">Empresarial</span>
+          <span class="sidebar-badge">Open Source</span>
+          <span class="sidebar-badge">Suscripción</span>
+        </div>
+      </aside>
+
+      <div class="page-body">
+        <div class="page-hero" id="inicio">
+          <div class="page-hero-text">
+            <h1>🖥️ Programas de Computadora</h1>
+            <p>Software de escritorio especializado para gestión empresarial, análisis ambiental y automatización, diseñado para el mínimo consumo de recursos.</p>
+            <div class="actions">
+              <a class="btn" href="#categorias">📂 Categorías</a>
+              <a class="btn" href="#caracteristicas">✅ Características</a>
+              <a class="btn secondary" href="#catalogo">🗂️ Catálogo</a>
+            </div>
+          </div>
+          <img class="hero-cap" src="Materiales/Cap.jpg" alt="Capitán Planeta" />
+        </div>
+
+        <div class="body-section" id="categorias">
+          <h3>🖥️ Software que ofrecemos</h3>
+          <p>Nuestro catálogo incluye programas de producción propia y distribución de terceros. Todos están optimizados para bajo consumo de RAM y CPU, garantizando que funcionen eficientemente incluso en equipos de gama media.</p>
+          <div class="body-grid">
+            <div class="body-item">
+              <strong>📊 Gestión Empresarial</strong>
+              <span>Contabilidad, inventario, facturación electrónica y nómina en un solo programa.</span>
+            </div>
+            <div class="body-item">
+              <strong>🌿 Monitor Ambiental</strong>
+              <span>Seguimiento de indicadores ambientales, generación de reportes de sostenibilidad.</span>
+            </div>
+            <div class="body-item">
+              <strong>🎨 Suite de Diseño</strong>
+              <span>Herramientas de edición gráfica, vectorial y multimedia para comunicación visual.</span>
+            </div>
+            <div class="body-item">
+              <strong>🔒 Seguridad</strong>
+              <span>Antivirus, gestores de contraseñas y herramientas de cifrado de datos empresariales.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-section" id="caracteristicas">
+          <h3>✅ Características Destacadas</h3>
+          <p>Todos nuestros programas se distinguen por ser intuitivos, rápidos y respetuosos con el ambiente. Aplicamos principios de programación eficiente que reducen el consumo de energía del computador durante su uso.</p>
+          <div class="body-grid">
+            <div class="body-item">
+              <strong>⚡ Alto rendimiento</strong>
+              <span>Optimizados para usar el mínimo de RAM y CPU sin sacrificar funcionalidad.</span>
+            </div>
+            <div class="body-item">
+              <strong>🔄 Actualizaciones</strong>
+              <span>Mejoras automáticas y soporte técnico incluido durante el período de licencia.</span>
+            </div>
+            <div class="body-item">
+              <strong>🔒 Seguridad</strong>
+              <span>Cifrado de datos, copias de seguridad automáticas y autenticación de dos factores.</span>
+            </div>
+            <div class="body-item">
+              <strong>📱 Multiplataforma</strong>
+              <span>Compatible con Windows, macOS y Linux sin necesidad de compras adicionales.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-section">
+          <h3>🛒 Cómo Adquirir</h3>
+          <p>Puedes adquirir licencias individuales o empresariales directamente en nuestra tienda online. Ofrecemos periodos de prueba gratuita de 30 días en todos nuestros programas de producción propia. Las licencias empresariales incluyen instalación y capacitación sin costo adicional.</p>
         </div>
       </div>
-      <figure class="cycle-card">
-        <img src="Imagenes/LOGOCLIENTE.JPG" alt="Logo del cliente" />
-        <figcaption>Imagen 1. Diagrama del ciclo formativo AVA SENA para proyecto formativo. Fuente: AVA SENA, proyecto formativo.////Sistematización de redes y tecnología.</figcaption>
-      </figure>
-    </section>
 
+      <aside class="sidebar-right" id="catalogo">
+        <div class="sidebar-card">
+          <h4>Catálogo Online</h4>
+          <ul class="sidebar-nav">
+            <li><a href="#">🗂️ Ver todos</a></li>
+            <li><a href="#">⬇️ Versiones demo</a></li>
+            <li><a href="#">🛒 Comprar licencia</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Soporte Técnico</h4>
+          <div class="sidebar-stat"><span>Horario</span><strong>Lun–Vie 8–6pm</strong></div>
+          <div class="sidebar-stat"><span>Email</span><strong>soporte@compusoft</strong></div>
+          <div class="sidebar-stat"><span>Chat</span><strong>En vivo</strong></div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Números</h4>
+          <div class="sidebar-stat"><span>Programas</span><strong>25+</strong></div>
+          <div class="sidebar-stat"><span>Usuarios activos</span><strong>2,000+</strong></div>
+          <div class="sidebar-stat"><span>Calificación</span><strong>4.8 / 5</strong></div>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <footer>
-    <div>AVA SENA - Proyecto de formacion para construccion de software integrado.</div>
+    <div>🌍 Compusoft Verde - Tecnología para un futuro sostenible. 🌿</div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
