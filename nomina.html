@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nómina - ALAMOSOFT</title>
+    <link rel="stylesheet" href="css/comfer.css">
+</head>
+<body>
+    <script src="js/nav.js"></script>
+
+    <div class="page-hero">
+        <img src="img/nomina.png" alt="" class="page-hero-bg-img">
+        <div class="page-hero-inner">
+            <h1>👥 Nómina</h1>
+            <p>Liquidación de nómina conforme a la legislación laboral colombiana. Gestione empleados, contratos, prestaciones y seguridad social de forma automática.</p>
+        </div>
+    </div>
+
+    <div class="page-layout">
+        <aside class="page-sidebar">
+            <div class="page-sidebar-title">Módulos</div>
+            <a class="page-sidebar-item psi-active" onclick="showMod('m1',this)"><span class="page-sidebar-icon">💼</span> Liquidación de Nómina</a>
+            <a class="page-sidebar-item" onclick="showMod('m2',this)"><span class="page-sidebar-icon">🏖️</span> Prestaciones Sociales</a>
+            <a class="page-sidebar-item" onclick="showMod('m3',this)"><span class="page-sidebar-icon">🏥</span> Seguridad Social</a>
+            <a class="page-sidebar-item" onclick="showMod('m4',this)"><span class="page-sidebar-icon">📤</span> PILA Electrónica</a>
+            <a class="page-sidebar-item" onclick="showMod('m5',this)"><span class="page-sidebar-icon">👤</span> Gestión de Empleados</a>
+            <a class="page-sidebar-item" onclick="showMod('m6',this)"><span class="page-sidebar-icon">📄</span> Comprobantes de Pago</a>
+            <div class="page-sidebar-cta"><a href="index.html" class="cf-cotiza-btn">Solicitar Demo</a></div>
+        </aside>
+        <div class="page-main">
+            <div id="m1" class="page-module pmod-visible">
+                <div class="page-module-icon">💼</div>
+                <h3>Liquidación de Nómina</h3>
+                <p>Cálculo automático de salarios, horas extras, recargos nocturnos y dominicales según el Código Sustantivo del Trabajo colombiano.</p>
+            </div>
+            <div id="m2" class="page-module">
+                <div class="page-module-icon">🏖️</div>
+                <h3>Prestaciones Sociales</h3>
+                <p>Liquidación automática de cesantías, intereses sobre cesantías, prima de servicios y vacaciones con proyección anual por empleado.</p>
+            </div>
+            <div id="m3" class="page-module">
+                <div class="page-module-icon">🏥</div>
+                <h3>Seguridad Social</h3>
+                <p>Cálculo y generación de planillas de salud, pensión y ARL para todos los empleados, con liquidación diferencial por tipo de contrato.</p>
+            </div>
+            <div id="m4" class="page-module">
+                <div class="page-module-icon">📤</div>
+                <h3>PILA Electrónica</h3>
+                <p>Generación del archivo PILA para pago de aportes parafiscales compatible con todos los operadores autorizados (SOI, Aportes en Línea, etc.).</p>
+            </div>
+            <div id="m5" class="page-module">
+                <div class="page-module-icon">👤</div>
+                <h3>Gestión de Empleados</h3>
+                <p>Hoja de vida digital, control de contratos, tipos de vinculación, ingresos, retiros, licencias e incapacidades con historial completo.</p>
+            </div>
+            <div id="m6" class="page-module">
+                <div class="page-module-icon">📄</div>
+                <h3>Comprobantes de Pago</h3>
+                <p>Generación automática de desprendibles de pago individuales en formato PDF con envío por correo electrónico a cada empleado.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cf-footer">
+        <div class="cf-footer-inner">
+            <div class="cf-footer-logo">
+                <span class="cf-footer-name">ALAMOSOFT</span>
+                <span class="cf-footer-tagline">Soluciones de Software Empresarial</span>
+            </div>
+            <div class="cf-footer-redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/iconofacebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/iconoinstagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/3156266703" target="_blank"><img src="img/iconowhatsapp.png" alt="WhatsApp"></a>
+            </div>
+            <div class="cf-footer-contact">
+                <p>&#128222; +57 (315) 626-6703</p>
+                <p><a href="mailto:info@alamosoft.co">info@alamosoft.co</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMod(id, el) {
+            document.querySelectorAll('.page-module').forEach(function(m) { m.classList.remove('pmod-visible'); });
+            document.querySelectorAll('.page-sidebar-item').forEach(function(s) { s.classList.remove('psi-active'); });
+            document.getElementById(id).classList.add('pmod-visible');
+            el.classList.add('psi-active');
+        }
+    </script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

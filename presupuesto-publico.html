@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Público - ALAMOSOFT</title>
+    <link rel="stylesheet" href="css/comfer.css">
+</head>
+<body>
+    <script src="js/nav.js"></script>
+
+    <div class="page-hero">
+        <img src="img/presupuesto%20publico.png" alt="" class="page-hero-bg-img">
+        <div class="page-hero-inner">
+            <h1>🏛️ Presupuesto Público</h1>
+            <p>Sistema de presupuesto para entidades públicas conforme a la normatividad colombiana. Control de ingresos, gastos, CDP, RP y reportes CHIP.</p>
+        </div>
+    </div>
+
+    <div class="page-layout">
+        <aside class="page-sidebar">
+            <div class="page-sidebar-title">Módulos</div>
+            <a class="page-sidebar-item psi-active" onclick="showMod('m1',this)"><span class="page-sidebar-icon">📥</span> Presupuesto de Ingresos</a>
+            <a class="page-sidebar-item" onclick="showMod('m2',this)"><span class="page-sidebar-icon">📤</span> Presupuesto de Gastos</a>
+            <a class="page-sidebar-item" onclick="showMod('m3',this)"><span class="page-sidebar-icon">📝</span> CDP y Registros Presupuestales</a>
+            <a class="page-sidebar-item" onclick="showMod('m4',this)"><span class="page-sidebar-icon">📊</span> Informes CHIP</a>
+            <a class="page-sidebar-item" onclick="showMod('m5',this)"><span class="page-sidebar-icon">🔄</span> Adiciones y Traslados</a>
+            <a class="page-sidebar-item" onclick="showMod('m6',this)"><span class="page-sidebar-icon">🏦</span> Tesorería Pública</a>
+            <div class="page-sidebar-cta"><a href="index.html" class="cf-cotiza-btn">Solicitar Demo</a></div>
+        </aside>
+        <div class="page-main">
+            <div id="m1" class="page-module pmod-visible">
+                <div class="page-module-icon">📥</div>
+                <h3>Presupuesto de Ingresos</h3>
+                <p>Elaboración, aprobación y control de la ejecución presupuestal de ingresos con trazabilidad completa por rubro y vigencia fiscal.</p>
+            </div>
+            <div id="m2" class="page-module">
+                <div class="page-module-icon">📤</div>
+                <h3>Presupuesto de Gastos</h3>
+                <p>Gestión de apropiaciones, compromisos y pagos por rubro presupuestal con control de vigencias y reservas presupuestales.</p>
+            </div>
+            <div id="m3" class="page-module">
+                <div class="page-module-icon">📝</div>
+                <h3>CDP y Registros Presupuestales</h3>
+                <p>Generación automática de Certificados de Disponibilidad Presupuestal y Registros Presupuestales con numeración consecutiva y firmas digitales.</p>
+            </div>
+            <div id="m4" class="page-module">
+                <div class="page-module-icon">📊</div>
+                <h3>Informes CHIP</h3>
+                <p>Generación de reportes para el CHIP (Consolidador de Hacienda e Información Pública) del Ministerio de Hacienda en los formatos oficiales vigentes.</p>
+            </div>
+            <div id="m5" class="page-module">
+                <div class="page-module-icon">🔄</div>
+                <h3>Adiciones y Traslados</h3>
+                <p>Manejo de adiciones, reducciones y traslados presupuestales con flujo de aprobación por niveles de autorización configurables.</p>
+            </div>
+            <div id="m6" class="page-module">
+                <div class="page-module-icon">🏦</div>
+                <h3>Tesorería Pública</h3>
+                <p>Control de caja menor, órdenes de pago, pagaduría y conciliación de cuentas bancarias de la entidad con integración contable automática.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cf-footer">
+        <div class="cf-footer-inner">
+            <div class="cf-footer-logo">
+                <span class="cf-footer-name">ALAMOSOFT</span>
+                <span class="cf-footer-tagline">Soluciones de Software Empresarial</span>
+            </div>
+            <div class="cf-footer-redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/iconofacebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/iconoinstagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/3156266703" target="_blank"><img src="img/iconowhatsapp.png" alt="WhatsApp"></a>
+            </div>
+            <div class="cf-footer-contact">
+                <p>&#128222; +57 (315) 626-6703</p>
+                <p><a href="mailto:info@alamosoft.co">info@alamosoft.co</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMod(id, el) {
+            document.querySelectorAll('.page-module').forEach(function(m) { m.classList.remove('pmod-visible'); });
+            document.querySelectorAll('.page-sidebar-item').forEach(function(s) { s.classList.remove('psi-active'); });
+            document.getElementById(id).classList.add('pmod-visible');
+            el.classList.add('psi-active');
+        }
+    </script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

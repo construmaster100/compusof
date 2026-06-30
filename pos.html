@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema POS - ALAMOSOFT</title>
+    <link rel="stylesheet" href="css/comfer.css">
+</head>
+<body>
+    <script src="js/nav.js"></script>
+
+    <div class="page-hero">
+        <img src="img/sistema%20pos.png" alt="" class="page-hero-bg-img">
+        <div class="page-hero-inner">
+            <h1>💳 Sistema POS</h1>
+            <p>Punto de venta rápido e intuitivo habilitado ante la DIAN. Ideal para comercios, supermercados, restaurantes y cualquier negocio con alto volumen de ventas.</p>
+        </div>
+    </div>
+
+    <div class="page-layout">
+        <aside class="page-sidebar">
+            <div class="page-sidebar-title">Módulos</div>
+            <a class="page-sidebar-item psi-active" onclick="showMod('m1',this)"><span class="page-sidebar-icon">🖥️</span> Punto de Venta Táctil</a>
+            <a class="page-sidebar-item" onclick="showMod('m2',this)"><span class="page-sidebar-icon">📦</span> Gestión de Inventario</a>
+            <a class="page-sidebar-item" onclick="showMod('m3',this)"><span class="page-sidebar-icon">💵</span> Cierre de Caja</a>
+            <a class="page-sidebar-item" onclick="showMod('m4',this)"><span class="page-sidebar-icon">🧾</span> Integración DIAN</a>
+            <a class="page-sidebar-item" onclick="showMod('m5',this)"><span class="page-sidebar-icon">🏷️</span> Precios y Promociones</a>
+            <a class="page-sidebar-item" onclick="showMod('m6',this)"><span class="page-sidebar-icon">📊</span> Reportes de Ventas</a>
+            <div class="page-sidebar-cta"><a href="index.html" class="cf-cotiza-btn">Solicitar Demo</a></div>
+        </aside>
+        <div class="page-main">
+            <div id="m1" class="page-module pmod-visible">
+                <div class="page-module-icon">🖥️</div>
+                <h3>Punto de Venta Táctil</h3>
+                <p>Interfaz táctil optimizada para agilizar las ventas con búsqueda rápida de productos, lectura de código de barras y descuentos instantáneos.</p>
+            </div>
+            <div id="m2" class="page-module">
+                <div class="page-module-icon">📦</div>
+                <h3>Gestión de Inventario</h3>
+                <p>Control de stock en tiempo real, alertas de mínimos, múltiples bodegas y trazabilidad por lote y número de serie.</p>
+            </div>
+            <div id="m3" class="page-module">
+                <div class="page-module-icon">💵</div>
+                <h3>Cierre de Caja</h3>
+                <p>Arqueo de caja, informe de ventas por turno y cuadre de medios de pago: efectivo, tarjeta, transferencia y crédito.</p>
+            </div>
+            <div id="m4" class="page-module">
+                <div class="page-module-icon">🧾</div>
+                <h3>Integración DIAN</h3>
+                <p>Factura electrónica POS habilitada ante la DIAN con envío automático al adquirente y documento equivalente impreso.</p>
+            </div>
+            <div id="m5" class="page-module">
+                <div class="page-module-icon">🏷️</div>
+                <h3>Precios y Promociones</h3>
+                <p>Listas de precios por cliente o canal, descuentos por volumen y promociones programadas con fechas y condiciones de vigencia.</p>
+            </div>
+            <div id="m6" class="page-module">
+                <div class="page-module-icon">📊</div>
+                <h3>Reportes de Ventas</h3>
+                <p>Dashboard de ventas por turno, producto, vendedor y categoría con comparativos históricos y exportación a Excel y PDF.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cf-footer">
+        <div class="cf-footer-inner">
+            <div class="cf-footer-logo">
+                <span class="cf-footer-name">ALAMOSOFT</span>
+                <span class="cf-footer-tagline">Soluciones de Software Empresarial</span>
+            </div>
+            <div class="cf-footer-redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/iconofacebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/iconoinstagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/3156266703" target="_blank"><img src="img/iconowhatsapp.png" alt="WhatsApp"></a>
+            </div>
+            <div class="cf-footer-contact">
+                <p>&#128222; +57 (315) 626-6703</p>
+                <p><a href="mailto:info@alamosoft.co">info@alamosoft.co</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMod(id, el) {
+            document.querySelectorAll('.page-module').forEach(function(m) { m.classList.remove('pmod-visible'); });
+            document.querySelectorAll('.page-sidebar-item').forEach(function(s) { s.classList.remove('psi-active'); });
+            document.getElementById(id).classList.add('pmod-visible');
+            el.classList.add('psi-active');
+        }
+    </script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

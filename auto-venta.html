@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Venta / Pre-venta / Cartera - ALAMOSOFT</title>
+    <link rel="stylesheet" href="css/comfer.css">
+</head>
+<body>
+    <script src="js/nav.js"></script>
+
+    <div class="page-hero">
+        <img src="img/auto%20venta.png" alt="" class="page-hero-bg-img">
+        <div class="page-hero-inner">
+            <h1>🚗 Auto-Venta / Pre-venta / Cartera</h1>
+            <p>Solución móvil para fuerza de ventas en campo: toma de pedidos, auto-venta con despacho inmediato y gestión de cartera desde el dispositivo del vendedor.</p>
+        </div>
+    </div>
+
+    <div class="page-layout">
+        <aside class="page-sidebar">
+            <div class="page-sidebar-title">Módulos</div>
+            <a class="page-sidebar-item psi-active" onclick="showMod('m1',this)"><span class="page-sidebar-icon">🗺️</span> Rutas de Venta</a>
+            <a class="page-sidebar-item" onclick="showMod('m2',this)"><span class="page-sidebar-icon">📱</span> Pedidos desde Móvil</a>
+            <a class="page-sidebar-item" onclick="showMod('m3',this)"><span class="page-sidebar-icon">🚚</span> Auto-Venta</a>
+            <a class="page-sidebar-item" onclick="showMod('m4',this)"><span class="page-sidebar-icon">💰</span> Gestión de Cartera</a>
+            <a class="page-sidebar-item" onclick="showMod('m5',this)"><span class="page-sidebar-icon">🧾</span> Facturación en Campo</a>
+            <a class="page-sidebar-item" onclick="showMod('m6',this)"><span class="page-sidebar-icon">📊</span> Informes de Gestión</a>
+            <div class="page-sidebar-cta"><a href="index.html" class="cf-cotiza-btn">Solicitar Demo</a></div>
+        </aside>
+        <div class="page-main">
+            <div id="m1" class="page-module pmod-visible">
+                <div class="page-module-icon">🗺️</div>
+                <h3>Rutas de Venta</h3>
+                <p>Planificación y asignación de rutas por vendedor con seguimiento GPS, cumplimiento de visitas y optimización del recorrido diario.</p>
+            </div>
+            <div id="m2" class="page-module">
+                <div class="page-module-icon">📱</div>
+                <h3>Pedidos desde Móvil</h3>
+                <p>App para toma de pedidos y pre-venta desde smartphone con sincronización offline, sin necesidad de conexión a internet permanente.</p>
+            </div>
+            <div id="m3" class="page-module">
+                <div class="page-module-icon">🚚</div>
+                <h3>Auto-Venta</h3>
+                <p>Despacho inmediato de mercancía desde el vehículo del vendedor con control de stock en ruta y liquidación automática al cierre del día.</p>
+            </div>
+            <div id="m4" class="page-module">
+                <div class="page-module-icon">💰</div>
+                <h3>Gestión de Cartera</h3>
+                <p>Control de cuentas por cobrar, recaudo en campo con registro de pagos parciales y conciliación automática con el sistema central.</p>
+            </div>
+            <div id="m5" class="page-module">
+                <div class="page-module-icon">🧾</div>
+                <h3>Facturación en Campo</h3>
+                <p>Emisión de facturas electrónicas DIAN directamente desde el dispositivo móvil del vendedor con envío inmediato al cliente.</p>
+            </div>
+            <div id="m6" class="page-module">
+                <div class="page-module-icon">📊</div>
+                <h3>Informes de Gestión</h3>
+                <p>Efectividad de visitas, ventas por ruta, recuperación de cartera y productividad por vendedor con comparativos históricos.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cf-footer">
+        <div class="cf-footer-inner">
+            <div class="cf-footer-logo">
+                <span class="cf-footer-name">ALAMOSOFT</span>
+                <span class="cf-footer-tagline">Soluciones de Software Empresarial</span>
+            </div>
+            <div class="cf-footer-redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/iconofacebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/iconoinstagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/3156266703" target="_blank"><img src="img/iconowhatsapp.png" alt="WhatsApp"></a>
+            </div>
+            <div class="cf-footer-contact">
+                <p>&#128222; +57 (315) 626-6703</p>
+                <p><a href="mailto:info@alamosoft.co">info@alamosoft.co</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMod(id, el) {
+            document.querySelectorAll('.page-module').forEach(function(m) { m.classList.remove('pmod-visible'); });
+            document.querySelectorAll('.page-sidebar-item').forEach(function(s) { s.classList.remove('psi-active'); });
+            document.getElementById(id).classList.add('pmod-visible');
+            el.classList.add('psi-active');
+        }
+    </script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

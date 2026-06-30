@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad - ALAMOSOFT</title>
+    <link rel="stylesheet" href="css/comfer.css">
+</head>
+<body>
+    <script src="js/nav.js"></script>
+
+    <div class="page-hero">
+        <img src="img/contabilidad.png" alt="" class="page-hero-bg-img">
+        <div class="page-hero-inner">
+            <h1>📊 Contabilidad</h1>
+            <p>Sistema contable completo e integrado para empresas de todos los sectores. Control total de su información financiera con reportes en tiempo real.</p>
+        </div>
+    </div>
+
+    <div class="page-layout">
+        <aside class="page-sidebar">
+            <div class="page-sidebar-title">Módulos</div>
+            <a class="page-sidebar-item psi-active" onclick="showMod('m1',this)"><span class="page-sidebar-icon">📒</span> Libro Mayor y Diario</a>
+            <a class="page-sidebar-item" onclick="showMod('m2',this)"><span class="page-sidebar-icon">🏢</span> Centros de Costo</a>
+            <a class="page-sidebar-item" onclick="showMod('m3',this)"><span class="page-sidebar-icon">📈</span> Estados Financieros</a>
+            <a class="page-sidebar-item" onclick="showMod('m4',this)"><span class="page-sidebar-icon">🏦</span> Conciliación Bancaria</a>
+            <a class="page-sidebar-item" onclick="showMod('m5',this)"><span class="page-sidebar-icon">📂</span> Plan de Cuentas</a>
+            <a class="page-sidebar-item" onclick="showMod('m6',this)"><span class="page-sidebar-icon">📊</span> Reportes e Informes</a>
+            <div class="page-sidebar-cta"><a href="index.html" class="cf-cotiza-btn">Solicitar Demo</a></div>
+        </aside>
+        <div class="page-main">
+            <div id="m1" class="page-module pmod-visible">
+                <div class="page-module-icon">📒</div>
+                <h3>Libro Mayor y Diario</h3>
+                <p>Registro de asientos contables con trazabilidad completa y consulta de movimientos por cuenta y período. Incluye diario general, mayor y balance de comprobación.</p>
+            </div>
+            <div id="m2" class="page-module">
+                <div class="page-module-icon">🏢</div>
+                <h3>Centros de Costo</h3>
+                <p>Distribución de ingresos y gastos por área, proyecto o departamento para un análisis de rentabilidad preciso por unidad de negocio.</p>
+            </div>
+            <div id="m3" class="page-module">
+                <div class="page-module-icon">📈</div>
+                <h3>Estados Financieros</h3>
+                <p>Balance general, estado de resultados y flujo de caja generados automáticamente bajo normas colombianas NIIF y locales, exportables a PDF y Excel.</p>
+            </div>
+            <div id="m4" class="page-module">
+                <div class="page-module-icon">🏦</div>
+                <h3>Conciliación Bancaria</h3>
+                <p>Conciliación automática entre extractos bancarios y registros contables con detección de diferencias y partidas conciliatorias pendientes.</p>
+            </div>
+            <div id="m5" class="page-module">
+                <div class="page-module-icon">📂</div>
+                <h3>Plan de Cuentas</h3>
+                <p>Plan de cuentas configurable adaptado a la legislación colombiana y a las necesidades de su empresa, con codificación flexible por niveles.</p>
+            </div>
+            <div id="m6" class="page-module">
+                <div class="page-module-icon">📊</div>
+                <h3>Reportes e Informes</h3>
+                <p>Más de 50 informes contables exportables a Excel y PDF, con filtros por período, cuenta, centro de costo y comparativos entre ejercicios.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cf-footer">
+        <div class="cf-footer-inner">
+            <div class="cf-footer-logo">
+                <span class="cf-footer-name">ALAMOSOFT</span>
+                <span class="cf-footer-tagline">Soluciones de Software Empresarial</span>
+            </div>
+            <div class="cf-footer-redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/iconofacebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/iconoinstagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/3156266703" target="_blank"><img src="img/iconowhatsapp.png" alt="WhatsApp"></a>
+            </div>
+            <div class="cf-footer-contact">
+                <p>&#128222; +57 (315) 626-6703</p>
+                <p><a href="mailto:info@alamosoft.co">info@alamosoft.co</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMod(id, el) {
+            document.querySelectorAll('.page-module').forEach(function(m) { m.classList.remove('pmod-visible'); });
+            document.querySelectorAll('.page-sidebar-item').forEach(function(s) { s.classList.remove('psi-active'); });
+            document.getElementById(id).classList.add('pmod-visible');
+            el.classList.add('psi-active');
+        }
+    </script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

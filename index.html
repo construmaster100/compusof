@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAMOSOFT - Soluciones de Software Empresarial</title>
+    <link rel="stylesheet" href="css/comfer.css">
+</head>
+
+<body>
+
+    <!-- ===== PANTALLA DE BIENVENIDA ===== -->
+    <div id="cf-bienvenida" class="cf-bienvenida-overlay">
+        <div class="cf-bienvenida-card">
+            <img src="img/Logo_empresa.png" alt="ALAMOSOFT" class="cf-bienvenida-logo">
+            <h1 class="cf-bienvenida-titulo">¡Bienvenido a ALAMOSOFT!</h1>
+            <p class="cf-bienvenida-subtitulo">Soluciones de Software Empresarial</p>
+            <p class="cf-bienvenida-texto">
+                Tu aliado en software empresarial: Contabilidad, Facturación,
+                Nómina, POS, Hotelería y más soluciones integradas.
+            </p>
+            <button class="cf-bienvenida-btn" onclick="cerrarBienvenida()">
+                Aceptar e Ingresar
+            </button>
+        </div>
+    </div>
+
+    <script src="js/nav.js"></script>
+
+    <!-- ===== GRILLA X4 ===== -->
+    <section class="cf-grilla-x4">
+        <div class="cf-grilla-x4-inner">
+            <div class="cf-grilla-x4-grid">
+                <a href="contabilidad.html" class="cf-gx4-card">
+                    <img src="img/contabilidad.png" alt="Contabilidad" class="cf-gx4-img">
+                    <h3>Contabilidad</h3>
+                    <p>Libro mayor, estados financieros y conciliación bancaria integrados.</p>
+                </a>
+                <a href="facturacion.html" class="cf-gx4-card">
+                    <img src="img/facturacion.png" alt="Facturación" class="cf-gx4-img">
+                    <h3>Facturación</h3>
+                    <p>Factura electrónica DIAN, cotizaciones y cuentas por cobrar.</p>
+                </a>
+                <a href="nomina.html" class="cf-gx4-card">
+                    <img src="img/nomina.png" alt="Nómina" class="cf-gx4-img">
+                    <h3>Nómina</h3>
+                    <p>Liquidación de nómina, prestaciones sociales y PILA electrónica.</p>
+                </a>
+                <a href="hoteleria.html" class="cf-gx4-card">
+                    <img src="img/hoteleria.png" alt="Hotelería" class="cf-gx4-img">
+                    <h3>Hotelería</h3>
+                    <p>Reservas, check-in, facturación hotelera y reporte de ocupación.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GRILLA X4 — fila 2 ===== -->
+    <section class="cf-grilla-x4">
+        <div class="cf-grilla-x4-inner">
+            <div class="cf-grilla-x4-grid">
+                <a href="presupuesto-publico.html" class="cf-gx4-card">
+                    <img src="img/presupuesto%20publico.png" alt="Presupuesto Público" class="cf-gx4-img">
+                    <h3>Presupuesto Público</h3>
+                    <p>CDP, registros presupuestales, ejecución de ingresos y gastos, informes CHIP.</p>
+                </a>
+                <a href="pos.html" class="cf-gx4-card">
+                    <img src="img/sistema%20pos.png" alt="Sistema POS" class="cf-gx4-img">
+                    <h3>Sistema POS</h3>
+                    <p>Punto de venta táctil habilitado DIAN, inventario en tiempo real y cierre de caja.</p>
+                </a>
+                <a href="parqueaderos.html" class="cf-gx4-card">
+                    <img src="img/parqueaderos.png" alt="Parqueaderos" class="cf-gx4-img">
+                    <h3>Parqueaderos</h3>
+                    <p>Control de entrada y salida, tarifas, mensualidades y facturación automática.</p>
+                </a>
+                <a href="auto-venta.html" class="cf-gx4-card">
+                    <img src="img/auto%20venta.png" alt="Auto-Venta" class="cf-gx4-img">
+                    <h3>Auto-Venta / Cartera</h3>
+                    <p>Pedidos en ruta, auto-venta móvil, gestión de cartera e informes de vendedor.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+
+        <!-- REGISTRO DE ARCHIVOS -->
+        <section id="registro-archivos" class="seccion_registro" style="display:none;">
+            <h2 class="registro-titulo">Archivos Registrados</h2>
+            <div id="lista-archivos" class="lista-archivos"></div>
+        </section>
+
+        <!-- MÓDULOS DEL SISTEMA -->
+        <section class="cf-categorias-section" id="cf-categorias">
+            <div class="cf-categorias-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+                <h2>Módulos del Sistema ALAMOSOFT</h2>
+            </div>
+            <div class="cf-categorias-grid">
+
+                <div class="cf-cat-col" id="cf-cat-contab">
+                    <h3 class="cf-cat-titulo">FINANZAS</h3>
+                    <ul>
+                        <li><a href="contabilidad.html">Contabilidad</a></li>
+                        <li><a href="facturacion.html">Facturación electrónica</a></li>
+                        <li><a href="nomina.html">Nómina y RRHH</a></li>
+                        <li><a href="presupuesto-publico.html">Presupuesto Público</a></li>
+                    </ul>
+                </div>
+
+                <div class="cf-cat-col" id="cf-cat-comerc">
+                    <h3 class="cf-cat-titulo">COMERCIAL</h3>
+                    <ul>
+                        <li><a href="pos.html">Sistema POS</a></li>
+                        <li><a href="auto-venta.html">Auto-Venta</a></li>
+                        <li><a href="auto-venta.html">Pre-venta</a></li>
+                        <li><a href="auto-venta.html">Gestión de cartera</a></li>
+                    </ul>
+                </div>
+
+                <div class="cf-cat-col" id="cf-cat-serv">
+                    <h3 class="cf-cat-titulo">SERVICIOS</h3>
+                    <ul>
+                        <li><a href="hoteleria.html">Hotelería</a></li>
+                        <li><a href="parqueaderos.html">Parqueaderos</a></li>
+                        <li><a href="#">Restaurante</a></li>
+                        <li><a href="#">Club y recreación</a></li>
+                    </ul>
+                </div>
+
+                <div class="cf-cat-col" id="cf-cat-integ">
+                    <h3 class="cf-cat-titulo">INTEGRACIÓN</h3>
+                    <ul>
+                        <li><a href="#">DIAN electrónica</a></li>
+                        <li><a href="#">PILA / Seguridad social</a></li>
+                        <li><a href="#">CHIP / Informes</a></li>
+                        <li><a href="#">API / Conectores</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICIOS BAR + HERO -->
+        <section class="cf-hero-section">
+
+            <div class="cf-servicios-bar">
+                <div class="cf-srv-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    Soporte 24/7
+                </div>
+                <span class="cf-srv-sep">|</span>
+                <div class="cf-srv-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                    Capacitación
+                </div>
+                <span class="cf-srv-sep">|</span>
+                <div class="cf-srv-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 4 23 10 17 10"/>
+                        <polyline points="1 20 1 14 7 14"/>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                    </svg>
+                    Actualizaciones
+                </div>
+            </div>
+
+            <div class="cf-hero-bg">
+                <img src="img/portada.JPG" alt="" class="cf-hero-img">
+                <div class="cf-hero-content">
+                    <a href="#" class="cf-cotiza-btn">SOLICITA DEMO</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="cf-footer">
+        <div class="cf-footer-inner">
+            <div class="cf-footer-logo">
+                <span class="cf-footer-name">ALAMOSOFT</span>
+                <span class="cf-footer-tagline">Soluciones de Software Empresarial</span>
+            </div>
+            <div class="cf-footer-redes">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/iconofacebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/iconoinstagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/3156266703" target="_blank">
+                    <img src="img/iconowhatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="cf-footer-contact">
+                <p>&#128222; +57 (315) 626-6703</p>
+                <p><a href="mailto:info@alamosoft.co">info@alamosoft.co</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* ── Bienvenida ── */
+        function cerrarBienvenida() {
+            const overlay = document.getElementById('cf-bienvenida');
+            overlay.classList.add('cf-bienvenida-oculto');
+            overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
+        }
+
+        /* ── Índice de búsqueda: todos los ítems del catálogo ── */
+        const CATALOGO = [
+            // módulos finanzas
+            { texto: 'Contabilidad',           seccion: '#cf-cat-contab' },
+            { texto: 'Libro mayor',            seccion: '#cf-cat-contab' },
+            { texto: 'Estados financieros',    seccion: '#cf-cat-contab' },
+            { texto: 'Conciliación bancaria',  seccion: '#cf-cat-contab' },
+            { texto: 'Centros de costo',       seccion: '#cf-cat-contab' },
+            { texto: 'Facturación',            seccion: '#cf-cat-contab' },
+            { texto: 'Factura electrónica',    seccion: '#cf-cat-contab' },
+            { texto: 'Nómina',                 seccion: '#cf-cat-contab' },
+            { texto: 'Prestaciones sociales',  seccion: '#cf-cat-contab' },
+            { texto: 'Presupuesto Público',    seccion: '#cf-cat-contab' },
+            // módulos comercial
+            { texto: 'Sistema POS',            seccion: '#cf-cat-comerc' },
+            { texto: 'Punto de venta',         seccion: '#cf-cat-comerc' },
+            { texto: 'Auto-Venta',             seccion: '#cf-cat-comerc' },
+            { texto: 'Pre-venta',              seccion: '#cf-cat-comerc' },
+            { texto: 'Cartera',                seccion: '#cf-cat-comerc' },
+            // módulos servicios
+            { texto: 'Hotelería',              seccion: '#cf-cat-serv' },
+            { texto: 'Parqueaderos',           seccion: '#cf-cat-serv' },
+            { texto: 'Restaurante',            seccion: '#cf-cat-serv' },
+            // integración
+            { texto: 'DIAN',                   seccion: '#cf-cat-integ' },
+            { texto: 'PILA',                   seccion: '#cf-cat-integ' },
+            { texto: 'CHIP',                   seccion: '#cf-cat-integ' },
+            { texto: 'API',                    seccion: '#cf-cat-integ' },
+        ];
+
+        /* ── Sugerencias en tiempo real ── */
+        function filtrarMateriales() {
+            const q = document.getElementById('buscador').value.trim().toLowerCase();
+            const box = document.getElementById('cf-sugerencias');
+            if (!q) { box.style.display = 'none'; limpiarResaltado(); return; }
+
+            const coincidencias = CATALOGO.filter(i => i.texto.toLowerCase().includes(q)).slice(0, 6);
+            if (!coincidencias.length) { box.style.display = 'none'; return; }
+
+            box.innerHTML = coincidencias.map(i =>
+                `<div class="cf-sug-item" onclick="elegirSugerencia('${i.texto}')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cf-orange)"
+                         stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/>
+                         <line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    ${i.texto}
+                </div>`
+            ).join('');
+            box.style.display = 'block';
+        }
+
+        function elegirSugerencia(texto) {
+            document.getElementById('buscador').value = texto;
+            document.getElementById('cf-sugerencias').style.display = 'none';
+            buscarMateriales();
+        }
+
+        /* ── Ejecutar búsqueda ── */
+        function buscarMateriales() {
+            const q = document.getElementById('buscador').value.trim().toLowerCase();
+            document.getElementById('cf-sugerencias').style.display = 'none';
+
+            limpiarResaltado();
+            if (!q) {
+                document.getElementById('cf-categorias').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                return;
+            }
+
+            let primerMatch = null;
+            let hayResultados = false;
+
+            /* Resaltar en listado de categorías */
+            document.querySelectorAll('.cf-cat-col').forEach(col => {
+                const titulo = col.querySelector('.cf-cat-titulo');
+                const items  = col.querySelectorAll('ul li a');
+                let colMatch = titulo.textContent.toLowerCase().includes(q);
+
+                items.forEach(a => {
+                    if (a.textContent.toLowerCase().includes(q)) {
+                        a.classList.add('cf-resaltado');
+                        a.closest('li').style.display = '';
+                        colMatch = true;
+                        hayResultados = true;
+                        if (!primerMatch) primerMatch = a;
+                    } else {
+                        a.closest('li').style.display = 'none';
+                    }
+                });
+
+                if (titulo.textContent.toLowerCase().includes(q)) {
+                    titulo.classList.add('cf-resaltado-titulo');
+                    items.forEach(a => { a.closest('li').style.display = ''; });
+                    hayResultados = true;
+                    if (!primerMatch) primerMatch = col;
+                }
+
+                col.style.opacity = colMatch ? '1' : '0.25';
+            });
+
+            /* Resaltar cards que coincidan */
+            document.querySelectorAll('.card_home').forEach(card => {
+                const label = card.querySelector('.menu-btn span:first-child');
+                if (label && label.textContent.toLowerCase().includes(q)) {
+                    card.classList.add('cf-card-match');
+                    hayResultados = true;
+                    if (!primerMatch) primerMatch = card;
+                }
+            });
+
+            if (primerMatch) {
+                primerMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                document.getElementById('cf-categorias').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            if (!hayResultados) mostrarSinResultados(q);
+        }
+
+        function limpiarResaltado() {
+            document.querySelectorAll('.cf-resaltado').forEach(el => el.classList.remove('cf-resaltado'));
+            document.querySelectorAll('.cf-resaltado-titulo').forEach(el => el.classList.remove('cf-resaltado-titulo'));
+            document.querySelectorAll('.cf-cat-col').forEach(col => {
+                col.style.opacity = '1';
+                col.querySelectorAll('ul li').forEach(li => li.style.display = '');
+            });
+            document.querySelectorAll('.card_home').forEach(c => c.classList.remove('cf-card-match'));
+            const aviso = document.getElementById('cf-sin-resultados');
+            if (aviso) aviso.remove();
+        }
+
+        function mostrarSinResultados(q) {
+            let aviso = document.getElementById('cf-sin-resultados');
+            if (!aviso) {
+                aviso = document.createElement('p');
+                aviso.id = 'cf-sin-resultados';
+                aviso.className = 'cf-sin-resultados';
+                document.getElementById('cf-categorias').prepend(aviso);
+            }
+            aviso.textContent = `No se encontraron resultados para "${q}". Intenta con otro término.`;
+        }
+
+        /* ── Voz (Web Speech API) ── */
+        function iniciarVoz() {
+            if (!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
+                alert('Tu navegador no soporta búsqueda por voz.');
+                return;
+            }
+            const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const rec = new SR();
+            rec.lang = 'es-CO';
+            rec.start();
+            rec.onresult = e => {
+                document.getElementById('buscador').value = e.results[0][0].transcript;
+                buscarMateriales();
+            };
+        }
+
+        /* ── Cerrar sugerencias al hacer clic afuera ── */
+        document.addEventListener('click', e => {
+            const sb = document.getElementById('cf-search-bar');
+            if (sb && !sb.contains(e.target)) {
+                const sug = document.getElementById('cf-sugerencias');
+                if (sug) sug.style.display = 'none';
+            }
+        });
+
+        /* ── Acordeón de cards ── */
+        function toggleMenu(boton) {
+            const estaAbierto = boton.getAttribute('aria-expanded') === 'true';
+            const submenu = boton.nextElementSibling;
+            boton.setAttribute('aria-expanded', String(!estaAbierto));
+            submenu.classList.toggle('abierto', !estaAbierto);
+        }
+
+        /* ── Registrar archivo adjunto ── */
+        function registrarArchivo(input) {
+            if (!input.files.length) return;
+            const archivo  = input.files[0];
+            const card     = input.closest('.card_home');
+            const servicio = card ? card.dataset.servicio : 'General';
+            const esImagen = input.accept.startsWith('image');
+            const tamaño   = archivo.size < 1024 * 1024
+                             ? (archivo.size / 1024).toFixed(1) + ' KB'
+                             : (archivo.size / (1024 * 1024)).toFixed(2) + ' MB';
+            const fecha    = new Date().toLocaleString('es-CO');
+
+            input.nextElementSibling.textContent = '✔ ' + archivo.name;
+
+            const entrada = document.createElement('div');
+            entrada.className = 'archivo-entrada';
+
+            if (esImagen) {
+                const url = URL.createObjectURL(archivo);
+                entrada.innerHTML = `
+                    <img src="${url}" class="archivo-preview-img" alt="${archivo.name}">
+                    <div class="archivo-datos">
+                        <p class="archivo-nombre">${archivo.name}</p>
+                        <p class="archivo-meta">&#128194; ${tamaño} &nbsp;&middot;&nbsp; Servicio: <strong>${servicio}</strong></p>
+                        <p class="archivo-fecha">&#128336; ${fecha}</p>
+                    </div>
+                    <button class="btn-quitar" title="Quitar" onclick="quitarEntrada(this)">&#x2715;</button>`;
+            } else {
+                entrada.innerHTML = `
+                    <div class="archivo-icono-doc">&#128196;</div>
+                    <div class="archivo-datos">
+                        <p class="archivo-nombre">${archivo.name}</p>
+                        <p class="archivo-meta">&#128194; ${tamaño} &nbsp;&middot;&nbsp; Servicio: <strong>${servicio}</strong></p>
+                        <p class="archivo-fecha">&#128336; ${fecha}</p>
+                    </div>
+                    <button class="btn-quitar" title="Quitar" onclick="quitarEntrada(this)">&#x2715;</button>`;
+            }
+
+            const lista   = document.getElementById('lista-archivos');
+            const seccion = document.getElementById('registro-archivos');
+            lista.appendChild(entrada);
+            seccion.style.display = 'block';
+            seccion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        /* ── Quitar entrada ── */
+        function quitarEntrada(btn) {
+            btn.parentElement.remove();
+            if (!document.getElementById('lista-archivos').children.length) {
+                document.getElementById('registro-archivos').style.display = 'none';
+            }
+        }
+    </script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
